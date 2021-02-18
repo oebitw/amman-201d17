@@ -58,10 +58,10 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 sum(a,b)
     let x =sum(a,b)[0];
     let y= sum(x,c)[0];
-    console.log(y);
+    // console.log(y);
     let z= multiply(a,b)[0];
     let p= multiply(z,c)[0];
-    console.log(p);
+    // console.log(p);
     let statement1= `${a} and ${b} and ${c} sum to ${y}.`
     let statement2= `The product of ${a} and ${b} and ${c} is ${p}.`
     return[y,p,statement1,statement2];
@@ -111,11 +111,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+    let x=multiply(testArray[0],testArray[1])[0];
+    let y= multiply(x,testArray[2])[0];
+    let statement=`The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${y}.`
+    return[y,statement];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
