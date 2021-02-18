@@ -58,10 +58,10 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 sum(a,b)
     let x =sum(a,b)[0];
     let y= sum(x,c)[0];
-    console.log(y);
+    // console.log(y);
     let z= multiply(a,b)[0];
     let p= multiply(z,c)[0];
-    console.log(p);
+    // console.log(p);
     let statement1= `${a} and ${b} and ${c} sum to ${y}.`
     let statement2= `The product of ${a} and ${b} and ${c} is ${p}.`
     return[y,p,statement1,statement2];
@@ -86,9 +86,9 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-    let x=sum(testArray[0],testArray[1])[0];
-    let y= sum(x,testArray[2])[0];
-    let statement=`${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${y} is their sum.`
+    let x=sum(sumArr[0],sumArr[1])[0];
+    let y= sum(x,sumArr[2])[0];
+    let statement=`${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${y} is their sum.`
     return[y,statement];
 
 }
