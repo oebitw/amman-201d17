@@ -56,15 +56,15 @@ Test this function by hand in the console to get it working, and when you think 
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 
 sum(a,b)
-    let x =sum(a,b);
-    let y= sum(x,c);
+    let x =sum(a,b)[0];
+    let y= sum(x,c)[0];
     console.log(y);
-    let z= multiply(a,b);
-    let p= multiply(z,c);
+    let z= multiply(a,b)[0];
+    let p= multiply(z,c)[0];
     console.log(p);
     let statement1= `${a} and ${b} and ${c} sum to ${y}.`
     let statement2= `The product of ${a} and ${b} and ${c} is ${p}.`
-    return[y,p,statement1,statement2].toString;
+    return[y,p,statement1,statement2];
 }
 
 // // Here is the test for sumAndMultiply(); uncomment it to run it
